@@ -2,11 +2,31 @@
   height:25vh;
 }
 
-.EditorArea textarea{
+.EditorArea textarea {
   outline:none;
+  border:0.01rem solid #aaa;
   margin-left:auto;
   margin-right:auto;
   height:50%;
   width:50%;
+  opacity:70%;
+  font:opacity 70%;
   font-size:large;
+}
+
+.EditorArea textarea:hover {
+  opacity:100%;
+  font:opacity 100%;
+}
+
+.EditorArea textarea:active {
+  opacity:100%;
+  font:opacity 100%;
+}
+
+.Divider {
+  width:50%;
+  border:0.01rem solid #aaa;
+  margin-left:auto;
+  margin-right:auto;
 }
