@@ -30,3 +30,12 @@
   margin-left:auto;
   margin-right:auto;
 }
+
+.Preview {
+  overflow:auto;
+  max-width:50%;
+  max-height:25vh;
+  margin-left:auto;
+  margin-right:auto;
+  overflow:scroll;
+}
