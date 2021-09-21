@@ -1,0 +1,12 @@
+.EditorArea {
+  height:25vh;
+}
+
+.EditorArea textarea{
+  outline:none;
+  margin-left:auto;
+  margin-right:auto;
+  height:50%;
+  width:50%;
+  font-size:large;
+}
