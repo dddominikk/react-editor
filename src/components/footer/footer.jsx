@@ -6,7 +6,7 @@ const footerContents = () => {
   const 
         start = 2021,
         end = new Date(Date.now()).getFullYear(),
-        cRange = (!end-start) ? `${end}` : `${start}-${end}`,
+        cRange = (!end-start) ? `${end}` : `${start}-${end}`, // leveraging falsiness
         result = `${cRange}©️Attention Spa, vl. Dominik Bošnjak`;
   
   return result;
