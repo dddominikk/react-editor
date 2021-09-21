@@ -1,15 +1,16 @@
 import React, { Component,useState, useEffect } from 'react';
 import './textarea.css';
+import {fix} from './fix.js';
 
 const Textarea = () => {
   
   const [value,setValue] = React.useState(
-    localStorage.getItem('myValueInLocalStorage') || ''
-  );
+    localStorage.getItem('cachedValue') || ''
+    );
   
-  React.useEffect(()=>{
-    localStorage.setItem('myValueInLocalStorage',value);
-  },[value]);
+  React.useEffect(() => {
+    localStorage.setItem('cachedValue',value);
+      },[value]);
   
   const onChange = event => setValue(event.target.value);
   
@@ -19,8 +20,12 @@ const Textarea = () => {
       type="text"
       onChange={onChange}
       placeholder="Write something..."></textarea>
-      
-      <div>{value}</div>
+
+      <div class="Divider"></div>      
+
+      <div class="Preview">{value}</div>
+
+
       </div>
 
       )
