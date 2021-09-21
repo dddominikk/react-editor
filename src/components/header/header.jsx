@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './header.css'
+import './header.css';
 
 const Header = () => {
 
@@ -8,6 +8,6 @@ const Header = () => {
       <h1>Attention Spa</h1>
       </header>
     );
-}
+};
  
 export default Header;
