@@ -1,6 +1,6 @@
-import React, {useState,useEffect,Suspense,lazy} from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
-import {Header,Textarea,Navbar} from './exports.js';
+import { Header, Footer, Textarea, Navbar } from './exports.js';
 
 
 
@@ -17,6 +17,7 @@ const App = () => {
         <Textarea />
 
       </body>
+        <Footer />
 
     </div>
 
